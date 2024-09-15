@@ -1,52 +1,71 @@
-.welcomeText {
+h2 {
+    color: white;
+    margin-top: 30px;
+}
+
+h3, h4, ul {
+    color: #E6E6FA;
+    margin: 30px;
+}
+
+
+.title {
     font-family: 'copperplate';
     text-align: center;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 75px;
     margin-top:  30px;
     color: white;
 }
-.profilesContainer {
+
+.profiles-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px; 
-    margin-top: 20px;
     justify-items: center;
+    gap: 15px; 
+    margin-top: 20px;
 }
 
-.profileItem {
+.profile-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    box-shadow: 0 ; 
     text-decoration: none;
     font-weight: bold;
-    flex-wrap: wrap;
     color: #000066;
-    display: flex; 
-    justify-items: center; /* Center the content horizontally */
+    padding: 25px;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(211, 211, 211, 0.7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border: 3px solid #4e4e4e;
 }
 
-.profileContent {
-    gap: 10px;
+.profile-item:hover {
+    background-color: rgba(203, 203, 203, 1);
+}
+
+.profile-item:active {    
+    background-color: rgba(170, 170, 170, 0.7);
+    transform: scale(0.95);
+}
+
+.profile-content {
     justify-items: center;
 }
 
-.profilePicture {
+.profile-picture {
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .name {
     text-align: center;
-    font-size: 1em;
-}
-
-.defaultH2 {
-    color: white;
-    margin-top: 50px;
-}
-
-.defaultH3 {
-    color: #E6E6FA;
-    margin-top: 50px;
+    font-size: 20px;
+    margin-top: 10px;
 }
 
 .text {
@@ -54,20 +73,45 @@
     color: #000066;
 }
 
+.description-text {
+    font-size:  18px;
+    color: #000066;
+    margin-left: 65px;
+}
+
+.description-text-background {
+    background-color: rgba(211, 211, 211, 0.7);
+    padding: 20px;
+    padding-left: 50px;
+    padding-right: 80px;
+    border: 3px solid #4e4e4e;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.dark-outline {
+    text-shadow: -0.5px -0.5px 0 rgba(0, 0, 102, 0.7), 0.5px -0.5px 0 rgba(0, 0, 102, 0.7),
+                 -0.5px 0.5px 0 rgba(0, 0, 102, 0.7), 0.5px 0.5px 0 rgba(0, 0, 102, 0.7);
+}
+
+.light-outline {
+     text-shadow: -0.5px -0.5px 0 #d3d3d3b3, 0.5px -0.5px 0 #d3d3d3b3,
+                 -0.5px 0.5px 0 #d3d3d3b3, 0.5px 0.5px 0 #d3d3d3b3;
+}
+
 .indent {
     text-indent: 30px;
 }
 
-.contactButton {
+.contact-button {
     max-width: fit-content;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
     border-radius: 15px;
     display: flex;
     font-size: 40px;
@@ -75,6 +119,36 @@
     text-decoration: none;
     color: #D8BFD8;
     background-color: #008080;
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+}
+
+.contact-button:active {
+    transform: scale(0.95);
+    background-color: #007070;
+}
+
+.contact-button:hover {
+    background-color: #007070;
+}
+
+#scrollButton { 
+    border: none;
+    display: none;
+    border-radius: 30%;
+    font-size: xx-large;
+    padding: 10px;
+    background-color: rgba(211, 211, 211, 0.7);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+    color: #008080;
+}
+
+#scrollButton:active {
+    transform: scale(0.95);
+    background-color: rgba(170, 170, 170, 0.7);
+}
+
+#scrollButton:hover {
+    background-color: rgba(203, 203, 203, 1);
 }
 
 .image-frame {
@@ -82,7 +156,7 @@
     padding: 10px;
     border: 5px solid #333;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
     border-radius: 8px;
 }
 
@@ -103,4 +177,10 @@
     background-color: #ffffcc;
     padding: 0;
     transition: background-color 0.5s ease;
+}
+
+.right-align-container {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
 }
