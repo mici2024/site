@@ -47,7 +47,6 @@ h3, h4, ul {
 }
 
 .profile-item:active {    
-    background-color: rgba(170, 170, 170, 0.7);
     transform: scale(0.95);
 }
 
@@ -76,19 +75,14 @@ h3, h4, ul {
 .description-text {
     font-size:  18px;
     color: #000066;
-    margin-left: 65px;
 }
 
 .description-text-background {
     background-color: rgba(211, 211, 211, 0.7);
     padding: 20px;
-    padding-left: 50px;
-    padding-right: 80px;
     border: 3px solid #4e4e4e;
     border-radius: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    margin-left: 50px;
-    margin-right: 50px;
 }
 
 .dark-outline {
@@ -124,7 +118,6 @@ h3, h4, ul {
 
 .contact-button:active {
     transform: scale(0.95);
-    background-color: #007070;
 }
 
 .contact-button:hover {
@@ -144,7 +137,6 @@ h3, h4, ul {
 
 #scrollButton:active {
     transform: scale(0.95);
-    background-color: rgba(170, 170, 170, 0.7);
 }
 
 #scrollButton:hover {
@@ -175,7 +167,6 @@ h3, h4, ul {
 .highlight {
     display: inline;
     background-color: #ffffcc;
-    padding: 0;
     transition: background-color 0.5s ease;
 }
 

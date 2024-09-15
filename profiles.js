@@ -59,7 +59,11 @@ function highlightElement() {
             console.log(`Highlighting element with ID: ${targetId}`);
             
             targetElement.classList.add(highlightClassName);
-            setTimeout(() => targetElement.classList.remove(highlightClassName), highlightDuration);
+
+            setTimeout(() => {
+                targetElement.classList.remove(highlightClassName);
+                
+            }, highlightDuration);
         }
     } else {
         console.log(`No element found with ID: ${targetId}`);
