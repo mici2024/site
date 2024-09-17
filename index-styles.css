@@ -127,13 +127,18 @@ h3, h4, ul {
 
 #scrollButton { 
     border: none;
-    display: none;
+    display: block;
+    position: fixed;
+    visibility: hidden;
+    bottom: 20px;       /* Positioning it at the bottom of the screen */
+    right: 5px;        /* Positioning it at the right of the screen */ 
     border-radius: 30%;
     font-size: xx-large;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.7);
     box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
     color: #008080;
+    z-index: 1000; 
 }
 
 #scrollButton:active {

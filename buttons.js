@@ -1,22 +1,30 @@
 function addScrollButton(buttonId) {
     const scrollButton = document.getElementById(buttonId);
 
-    window.onscroll = function () {
-        const visibilityPoint = 100;
+    if (!scrollButton) {
+        console.error(`Button with ID ${buttonId} not found`);
+        return;
+    }
 
-        if (document.body.scrollTop > visibilityPoint || document.documentElement.scrollTop > visibilityPoint) {
-            scrollButton.style.display = 'block';
+    window.addEventListener('scroll', () => {
+        const visibilityPoint = 300;
+
+        if (window.scrollY > visibilityPoint) {
+            scrollButton.style.visibility = 'visible';
         } else {
-            scrollButton.style.display = 'none';
+            scrollButton.style.visibility = 'hidden';
         }
-    };
+    });
 
+    // click event listener to scroll back to top
     scrollButton.addEventListener('click', () => {
-        window.scroll({
+        window.scrollTo({
             top: 0,
             behavior: 'smooth'
         });
     });
 }
 
-window.addScrollButton('scrollButton');
+window.addEventListener('DOMContentLoaded', () => {
+    addScrollButton('scrollButton');
+});
