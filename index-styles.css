@@ -8,7 +8,6 @@ h3, h4, ul {
     margin: 30px;
 }
 
-
 .title {
     font-family: 'copperplate';
     text-align: center;
@@ -38,17 +37,17 @@ h3, h4, ul {
     padding: 25px;
     padding-bottom: 15px;
     border-radius: 10px;
-    background-color: rgba(211, 211, 211, 0.7);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    background-color: rgba(211, 211, 211, 0.7); /* Transparent grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);   /* Adds a shadow to the profile item */
     border: 3px solid #4e4e4e;
 }
 
 .profile-item:hover {
-    background-color: rgba(203, 203, 203, 1);
+    background-color: rgba(203, 203, 203, 1); /* Slightly changes background on hover */
 }
 
 .profile-item:active {    
-    transform: scale(0.95);
+    transform: scale(0.95); /* Scales down the item slightly when clicked */
 }
 
 .profile-content {
@@ -58,8 +57,8 @@ h3, h4, ul {
 .profile-picture {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 50%;  /* Creates a circular profile picture */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Adds shadow to the profile picture */
 }
 
 .name {
@@ -69,35 +68,37 @@ h3, h4, ul {
 }
 
 .text {
-    font-size:  18px;
+    font-size: 18px;
     color: #000066;
 }
 
 .description-text {
-    font-size:  18px;
+    font-size: 18px;
     color: #000066;
 }
 
 .description-text-background {
-    background-color: rgba(211, 211, 211, 0.7);
+    background-color: rgba(211, 211, 211, 0.7); /* Transparent grey background */
     padding: 20px;
     border: 3px solid #4e4e4e;
-    border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;    /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Adds a shadow */
 }
 
 .dark-outline {
     text-shadow: -0.5px -0.5px 0 rgba(0, 0, 102, 0.7), 0.5px -0.5px 0 rgba(0, 0, 102, 0.7),
-                 -0.5px 0.5px 0 rgba(0, 0, 102, 0.7), 0.5px 0.5px 0 rgba(0, 0, 102, 0.7);
+                 -0.5px 0.5px 0 rgba(0, 0, 102, 0.7), 0.5px 0.5px 0 rgba(0, 0, 102, 0.7); 
+    /* Adds a dark blue outline effect to the text */
 }
 
 .light-outline {
-     text-shadow: -0.5px -0.5px 0 #d3d3d3b3, 0.5px -0.5px 0 #d3d3d3b3,
-                 -0.5px 0.5px 0 #d3d3d3b3, 0.5px 0.5px 0 #d3d3d3b3;
+    text-shadow: -0.5px -0.5px 0 #d3d3d3b3, 0.5px -0.5px 0 #d3d3d3b3,
+                 -0.5px 0.5px 0 #d3d3d3b3, 0.5px 0.5px 0 #d3d3d3b3; 
+    /* Adds a light grey outline effect to the text */
 }
 
 .indent {
-    text-indent: 30px;
+    text-indent: 30px; /* Indents the first line of the text */
 }
 
 .contact-button {
@@ -107,47 +108,47 @@ h3, h4, ul {
     margin-top: 20px;
     margin-bottom: 20px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 15px; 
     display: flex;
     font-size: 40px;
     font-style: oblique;
     text-decoration: none;
     color: #D8BFD8;
     background-color: #008080;
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.6); /* Adds a deep shadow for a 3D effect */
 }
 
 .contact-button:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Reduces the size slightly on click */
 }
 
 .contact-button:hover {
-    background-color: #007070;
+    background-color: #007070; /* Changes the background color on hover */
 }
 
 #scrollButton { 
     border: none;
     display: block;
     position: fixed;
-    visibility: hidden;
-    bottom: 20px;       /* Positioning it at the bottom of the screen */
-    right: 5px;        /* Positioning it at the right of the screen */ 
-    border-radius: 30%;
+    visibility: hidden; /* Hidden initially */
+    bottom: 20px;       /* Positions the button at the bottom-right of the screen */
+    right: 5px;        
+    border-radius: 30%; /* Gives the button rounded corners */
     font-size: xx-large;
     padding: 10px;
     background-color: rgba(211, 211, 211, 0.7);
-    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 6px rgba(0, 0, 0, 0.3); /* Adds shadow to the button */
     color: #008080;
-    z-index: 1000; 
+    z-index: 1000; /* Ensures the button is on top of other elements */
 }
 
 #scrollButton:active {
-    transform: scale(0.95);
+    transform: scale(0.95); /* Slightly reduces the size when clicked */
 }
 
 #scrollButton:hover {
-    background-color: rgba(203, 203, 203, 1);
-    cursor: pointer;
+    background-color: rgba(203, 203, 203, 1); /* Changes background on hover */
+    cursor: pointer; /* Adds a pointer cursor on hover */
 }
 
 .image-frame {
@@ -155,30 +156,30 @@ h3, h4, ul {
     padding: 10px;
     border: 5px solid #333;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
-    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1); /* Adds a strong shadow to the image frame */
+    border-radius: 8px; /* Slightly rounds the corners of the image frame */
 }
 
 .image-container {
     display: flex;
     gap: 10px;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap; /* Makes the images wrap into the next line if they don't fit */
 }
 
 .fixed-size-image {
     height: 500px;  
-    width: 300px;   
+    width: 300px;   /* Forces the images to have fixed dimensions */
 }
 
 .highlight {
     display: inline;
     background-color: #ffffcc;
-    transition: background-color 0.5s ease;
+    transition: background-color 0.5s ease; /* Adds a smooth transition when background color changes */
 }
 
 .right-align-container {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-end; /* Aligns the content to the right */
     position: relative;
 }

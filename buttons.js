@@ -7,7 +7,7 @@ function addScrollButton(buttonId) {
     }
 
     window.addEventListener('scroll', () => {
-        const visibilityPoint = 300;
+        const visibilityPoint = 500;
 
         if (window.scrollY > visibilityPoint) {
             scrollButton.style.visibility = 'visible';
