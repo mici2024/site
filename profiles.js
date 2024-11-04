@@ -1,6 +1,11 @@
  const profiles = [
     {name: "Dino", image: "images/dino.jpg", link: "#Dino", alt: "Imagine cu Dino"},
-    {name: "Lola", image: "images/lola.png", link: "#Lola", alt: "Imagine cu Lola"},
+   {
+    "name": "Lola",
+    "image": "images/lola.png",
+    "link": "lola.html",
+    "alt": "Imagine cu Lola"
+},
     {name: "Nick", image: "images/nick.jpg", link: "#Nick", alt: "Imagine cu Nick"},
     {name: "Oaie", image: "images/oaie.jpg", link: "#Oaie", alt: "Imagine cu Oaie"},
     {name: "Iepurilă", image: "images/iepu.jpg", link: "#Iepurila", alt: "Imagine cu Iepurila"},
