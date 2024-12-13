@@ -1,22 +1,3 @@
- const profiles = [
-    {name: "Dino", image: "images/dino.jpg", link: "#Dino", alt: "Imagine cu Dino"},
-   {
-    "name": "Lola",
-    "image": "images/lola.png",
-    "link": "lola.html",
-    "alt": "Imagine cu Lola"
-},
-    {name: "Nick", image: "images/nick.jpg", link: "#Nick", alt: "Imagine cu Nick"},
-    {name: "Oaie", image: "images/oaie.jpg", link: "#Oaie", alt: "Imagine cu Oaie"},
-    {name: "Iepurilă", image: "images/iepu.jpg", link: "#Iepurila", alt: "Imagine cu Iepurila"},
-    {name: "Idefix", image: "images/idefix.jpg", link: "#Idefix", alt: "Imagine cu Idefix"},
-    {name: "Ciupi", image: "images/ciupi.JPG", link: "#Ciupi", alt: "Imagine cu Ciupi"},
-    {name: "Pingu", image: "images/pingu.png", link: "#Pingu", alt: "Imagine cu Pingu"},
-    {name: "Rate", image: "images/rate.png", link: "#Rate", alt: "Imagine cu Rate"},
-    {name: "Norisor", image: "images/nori.png", link: "#Norisor", alt: "Imagine cu Norisor"},
-    {name: "Maghi", image: "images/maghi.jpg", link: "#Maghi", alt: "Imagine cu Maghi"},
-];
-
 function renderProfiles(containterId, profiles) {
     const profilesContainer = document.getElementById(containterId);
     let html = '';
@@ -74,5 +55,20 @@ function highlightElement() {
         console.log(`No element found with ID: ${targetId}`);
     }
 }
+
+const profiles = [
+    {name: "Dino", image: "images/dino.jpg", link: "#Dino", alt: "Imagine cu Dino"},
+    {name: "Lola", image: "images/lola.png", link: "#Lola", alt: "Imagine cu Lola"},
+    {name: "Nick", image: "images/nick.jpg", link: "#Nick", alt: "Imagine cu Nick"},
+    {name: "Oaie", image: "images/oaie.jpg", link: "#Oaie", alt: "Imagine cu Oaie"},
+    {name: "Iepurilă", image: "images/iepu.jpg", link: "#Iepurila", alt: "Imagine cu Iepurila"},
+    {name: "Idefix", image: "images/idefix.jpg", link: "#Idefix", alt: "Imagine cu Idefix"},
+    {name: "Ciupi", image: "images/ciupi.JPG", link: "#Ciupi", alt: "Imagine cu Ciupi"},
+    {name: "Pingu", image: "images/pingu.png", link: "#Pingu", alt: "Imagine cu Pingu"},
+    {name: "Rate", image: "images/rate.png", link: "#Rate", alt: "Imagine cu Rate"},
+    {name: "Norisor", image: "images/nori.png", link: "#Norisor", alt: "Imagine cu Norisor"},
+    {name: "Maghi", image: "images/maghi.jpg", link: "#Maghi", alt: "Imagine cu Maghi"},
+    {name: "Ricky", image: "images/rick.jpeg", link: "#Rick", alt: "Imagine cu Ricky"},
+];
 
 renderProfiles('profilesContainer', profiles);
