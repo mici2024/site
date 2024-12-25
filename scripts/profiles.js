@@ -64,7 +64,7 @@ const profiles = [
     {name: "Iepurilă", image: "images/iepu.jpg", link: "#Iepurila", alt: "Imagine cu Iepurila"},
     {name: "Idefix", image: "images/idefix.jpg", link: "#Idefix", alt: "Imagine cu Idefix"},
     {name: "Ciupi", image: "images/ciupi.JPG", link: "#Ciupi", alt: "Imagine cu Ciupi"},
-    {name: "Pingu", image: "images/pingu.png", link: "#Pingu", alt: "Imagine cu Pingu"},
+    {name: "Pingu", image: "images/pingu.png", link: "pinguBirthday.html", alt: "Imagine cu Pingu"},
     {name: "Rate", image: "images/rate.png", link: "#Rate", alt: "Imagine cu Rate"},
     {name: "Norisor", image: "images/nori.png", link: "#Norisor", alt: "Imagine cu Norisor"},
     {name: "Maghi", image: "images/maghi.jpg", link: "#Maghi", alt: "Imagine cu Maghi"},
